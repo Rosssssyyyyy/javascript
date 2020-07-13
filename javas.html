@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type=""></script>
+		
+		<title> Hollywood stars </title>
+		<style>
+		
+			*{
+				box-sizing: border-box;
+			}
+			
+			body{
+				font-family: sans-serif;
+			}
+			
+			button{
+				text-transform: bold;
+				font-size: 1cm;
+			}
+			
+			img{
+				vertical-align: middle;
+				position: relative;
+				margin: auto;
+				width: 80vw;
+				height: 40vw;
+			}
+			
+			h1{
+				text-align: center;
+				font-family: Impact;
+			}
+			
+			.slideip{
+				margin: auto;
+				background-color: red;
+				text-align: center;
+				font-size:0.5cm;
+				position: relative;
+				margin-bottom: 5px;
+				font-family: Comic Sans MS;
+			}
+			
+			.dot{
+				cursor: pointer;
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+			}
+			
+			.active{
+				background-color: #717171;
+			}
+			
+			.slideshow-container{
+				position: relative;
+				margin: auto;
+				width: 80vw;
+				height: 40vw;
+			}
+			
+			.mySlides{
+				display: none;
+			}
+			
+			.fade{
+				-webkit-animation-name: fade;
+			  	-webkit-animation-duration: 1.5s;
+			  	animation-name: fade;
+			  	animation-duration: 1.5s;
+			}
+			
+			.text{
+				color: #f2f2f2;
+			 	font-size: 15px;
+			 	padding: 8px 12px;
+			 	position: absolute;
+			 	bottom: 8px;
+			 	width: 100%;
+			 	text-align: center;
+			}
+			
+			@-webkit-keyframes fade {
+			  	from {opacity: .4} 
+			  	to {opacity: 1}
+			}
+
+			@keyframes fade {
+			  	from {opacity: .4} 
+			  	to {opacity: 1}
+			}
+			
+			@media only screen and (max-width: 300px) {
+			  	.text {font-size: 11px}
+			}
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<!--slideshow-->
+		<div id="slideshow">
+				<h1> Your favourite hollywood stars </h1>
+				<!--input-->
+				
+					<div class="container-md slideip">
+						<label> Enter time in seconds </label>
+						<input type="number" id="second" type="text" placeholder="Enter time here">
+						<button onclick="showSlides();"> Enter </button>
+					</div>
+				
+				
+				<!--slides-->
+				
+					<div class="slideshow-container" style="background-color: pink">
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i1.jpg">
+							<div class="text"> KYLIE </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i2.jpg">
+							<div class="text"> GIGI </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i3.jpg">
+							<div class="text"> BELLA </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i4.jpg">
+							<div class="text"> KENDALL </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i5.jpg">
+							<div class="text"> HAILEY </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i6.jpg">
+							<div class="text"> WINNIE </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i7.jpg">
+							<div class="text"> KIM </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i8.jpg">
+							<div class="text"> RIHANNA </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i9.jpg">
+							<div class="text"> JENIFFER </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="C:\Users\Lenovo\Desktop\ROSSY\web page\javascript\i10.jpg">
+							<div class="text"> SELENA </div>
+						</div>
+					</div>
+					<br>
+					<div style="text-align:center">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				
+		
+		</div>
+		<hr>
+		
+		<div id="calculator" style="margin-top: 7px; background-color: pink;">
+			<h1>Calculator</h1>
+			<div style="width: 200px; position: relative; margin: auto; font-family: Georgia">
+				<label>Number1:</label>
+				<input style="margin-bottom: 5px;" type="text" id="num1">
+				<label>Number2:</label>
+				<input style="margin-bottom: 5px;" type="text" id="num2">
+				<label>Result:</label>
+				<input type="text" id="res" style="margin-bottom: 5px;">
+			</div>
+			<div style="margin-top: 5px; margin: auto; margin-left:300px; position: relative; font-family: Garamond;">
+				<button onclick="addition();">Addition</button>
+				<button onclick="subtraction();">Subtraction</button>
+				<button onclick="multiplication();">Multiplication</button>
+				<button onclick="division();">Division</button>
+			</div>
+		</div>
+		<hr>
+		
+		<div id="validation" style="margin-top: 5px; margin: auto; margin-left:570px; position: relative;">
+			<h2 style="font-family: Impact">Email Validation</h2>
+			<div>
+				<label>Email:</label>
+				<input type="email" placeholder="Email " id="myemail" onkeyup="validate();">
+			</div>
+		</div>
+		
+		
+		<script>
+			var slideIndex = 0;
+			function showSlides() {
+				if (document.getElementById("second").value) {
+					var x = document.getElementById("second").value;
+				}
+				else {
+					var x = 100000000000;
+				}
+			  	var i;
+			  	var slides = document.getElementsByClassName("mySlides");
+			  	var dots = document.getElementsByClassName("dot");
+			  	for (i = 0; i < slides.length; i++) {
+			    	slides[i].style.display = "none";  
+			  	}
+			  	slideIndex++;
+			  	if (slideIndex > slides.length) {
+			  		slideIndex = 1
+			  	}    
+			  	for (i = 0; i < dots.length; i++) {
+			    	dots[i].className = dots[i].className.replace(" active", "");
+			  	}
+			  	slides[slideIndex-1].style.display = "block";  
+			  	dots[slideIndex-1].className += " active";
+			  	setTimeout(showSlides, x * 1000);
+			}
+			
+			function addition() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a + b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function subtraction() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a - b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function multiplication() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a * b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function division() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a / b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			
+			function validate() {
+				var myemail = document.getElementById("myemail");
+				var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            	if (reg.test(myemail.value) == true) {
+            		myemail.style.background = "green";
+            	}
+            	if (reg.test(myemail.value) == false) {
+                	myemail.style.background = "red";
+            	}
+				
+			}
+		</script>
+		
+		
+		
+		</div>
+	</body>
+</html>
